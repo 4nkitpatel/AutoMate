@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AutoMate</title>
+    <link rel="icon" href="https://img.icons8.com/wired/16/000000/online-support--v2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <div class="container" id="chatBox"></div>
+
+    <form class="conversation-compose" onSubmit="return false;">
+        <input class="input-msg" id="myInput" oninput="makeSendButton()" value="" name="input" placeholder="Type a message" autocomplete="off" autofocus="">
+        <button class="send" id="myBtn" type="button" onclick="printUserText()">
+            <div class="circle">
+                <i class="zmdi zmdi-mic"></i>
+            </div>
+        </button>
+    </form>
+
+    <script type="text/javascript" src="/eel.js"></script>
+    <script defer type="text/javascript" src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</body>
+</html>

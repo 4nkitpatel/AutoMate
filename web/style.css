@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #AAEBF2;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    overflow-y:scroll;
+    height: 588px;
+    width: 100%;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.body::-webkit-scrollbar { width: 0 !important }
+#usertext{
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto Mono', monospace;
+    text-align: left;
+    box-sizing: inherit;
+    color: #000;
+    clear: both;
+    line-height: 18px;
+    font-size: 15px;
+    padding: 8px;
+    position: relative;
+    margin: 8px 8px;
+    max-width: 70%;
+    word-wrap: break-word;
+    background: #e1ffc7;
+    border-radius: 0px 5px 5px 5px;
+    float: left;
+}
+#usertext:after{
+    border-width: 0px 10px 10px 0;
+    border-color: transparent #e1ffc7 transparent transparent;
+    top: 0;
+    left: -10px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#agenttext{
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto Mono', monospace;
+    text-align: left;
+    box-sizing: inherit;
+    color: #000;
+    clear: both;
+    line-height: 18px;
+    font-size: 15px;
+    padding: 8px;
+    position: relative;
+    margin: 8px 8px;
+    max-width: 70%;
+    word-wrap: break-word;
+    background: #e1ffc7;
+    border-radius: 5px 0px 5px 5px;
+    float: right;
+}
+
+#agenttext:after {
+    border-width: 0px 0 10px 10px;
+    border-color: transparent transparent transparent #e1ffc7;
+    top: 0;
+    right: -10px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+
+.conversation-compose {
+    display: flex;
+    /*flex-direction: row;
+    align-items: flex-end;*/
+    position: fixed;
+    bottom: 0;
+    padding-bottom:5px;
+    margin-left: 5px;
+    /*position:absolute;
+    bottom:0;*/
+    height: 50px;
+    width: 100%;
+    z-index: 2;
+}
+
+.conversation-compose div, .conversation-compose input {
+    height: 100%;
+}
+
+
+.conversation-compose .input-msg {
+    border: 0;
+    flex: 1 1 auto;
+    font-size: 16px;
+    margin: 0;
+    padding-left: 9px;
+    outline: none;
+    min-width: 80px;
+    border-radius: 10px;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark-color(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: -internal-light-dark-color(white, black);
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+.conversation-compose div, .conversation-compose input {
+    height: 100%;
+}
+
+
+
+.conversation-compose .send {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    flex: 0 0 auto;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 0;
+    position: relative;
+    outline: none;
+}
+button {
+    -webkit-appearance: button;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: buttonface;
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+}
+
+
+.conversation-compose .send .circle {
+    background: #008a7c;
+    border-radius: 50%;
+    color: #fff;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.zmdi {
+    font-size : 25px;
+    margin-left: 1px;
+}
