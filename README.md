@@ -1,6 +1,9 @@
 # AutoMate
 Virtual assistant to automate day to day life task
 
+![plot](/UI.png)
+
+### Services Includes
 - Course Recommended system  
 - Download Manager  
 - Image To Text (OCR) / PDF To Text  
